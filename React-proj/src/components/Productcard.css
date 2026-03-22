@@ -1,0 +1,136 @@
+.card {
+  background: #1a1208;
+  border: 1px solid #2e2010;
+  border-radius: 3px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.card:hover {
+  border-color: #5a3a1a;
+  transform: translateY(-2px);
+}
+
+.card__badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #c9813a;
+  color: #1a1208;
+  font-family: 'Jost', sans-serif;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 3px 10px;
+  border-radius: 1px;
+  z-index: 1;
+}
+
+.card__visual {
+  background: #120e06;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #2e2010;
+}
+
+.card-emoji {
+  font-size: 40px;
+}
+
+.card__info {
+  padding: 20px 20px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+
+.card__category {
+  font-family: 'Jost', sans-serif;
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #c9813a;
+}
+
+.card__name {
+  font-family: 'Cormorant Garant', serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #f5ede0;
+  line-height: 1.2;
+}
+
+.card__description {
+  font-family: 'Jost', sans-serif;
+  font-size: 13px;
+  color: #7a5a40;
+  line-height: 1.6;
+  font-weight: 300;
+  flex: 1;
+}
+
+.card__rating-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.card__stars {
+  color: #c9813a;
+  font-size: 12px;
+  letter-spacing: 1px;
+}
+
+.card__reviews {
+  font-family: 'Jost', sans-serif;
+  font-size: 11px;
+  color: #5a4030;
+}
+
+.card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 12px;
+  padding-top: 16px;
+  border-top: 1px solid #2e2010;
+}
+
+.card__price {
+  font-family: 'Cormorant Garant', serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #f5ede0;
+}
+
+.card__add-btn {
+  background: none;
+  border: 1px solid #c9813a;
+  border-radius: 2px;
+  padding: 8px 16px;
+  color: #c9813a;
+  font-family: 'Jost', sans-serif;
+  font-size: 12px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  border-radius: 20px;
+}
+
+.card__add-btn:hover {
+  background: rgba(201, 129, 58, 0.1);
+}
+
+.card__add-btn--added {
+  background: #c9813a;
+  color: #1a1208;
+  font-weight: 600;
+}
