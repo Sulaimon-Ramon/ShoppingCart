@@ -1,0 +1,185 @@
+
+.cart{
+    background: #0f0a04;
+    min-height: 70vh;
+}
+.cart__items{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+.cart__item{
+    display: grid;
+    grid-template-columns: 80px 1fr auto auto;
+    gap: 20px;
+    align-items: center;
+    background: #1a1208;
+    border: 1px solid #2e2010;
+    border-radius: 3px;
+    padding: 20px 24px;
+}
+.cart__items-visual{
+    background: #120e06;
+    border-radius: 2px;
+    width: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 60px;
+}
+.cart__item-category{
+font-family: 'Jost', sans-serif;
+font-size: 13px;
+letter-spacing: 2px;
+color: #c9813a;
+text-transform: uppercase;
+margin-bottom: 4px;
+}
+.cart__item-name{
+    font-family: 'Cormorant Garant', serif;
+    font-size: 13px;
+    letter-spacing: 2px;
+    color: #c9813a;
+    text-transform: uppercase;
+    margin-bottom: 4px;
+}
+.cart__item-price{
+    font-family: 'Jost', sans-serif;
+    font-size: 13px;
+    color: #7a5a40;
+}
+.cart__item-controls{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #120e06;
+    border: 1px solid #2e2010;
+    border-radius: 4px;
+    padding: 2px 2px;
+}
+.cart__qty-btn{
+    background-color: none;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    line-height: 1;
+    font-family: "jost", sans-serif;
+}
+
+.cart_qty{
+    font-family: 'Jost', sans-serif;
+    font-size: 16px;
+    color: #f5ede0;
+    min-width: 20px;
+    text-align: center;
+}
+.cart__summary{
+    background: #1a1208;
+    border: 1px solid #2e2010;
+    border-radius: 3px;
+    padding: 32px;
+    position: sticky;
+    top: 80px;
+}
+.cart__summary-title{
+    font-family: 'Cormorant Garant', serif;
+    font-size: 24px;
+    color: #f5ede0;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+.cart__summary-rows{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.cart__summary-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.cart__summary-label{
+    font-family: 'Jost', sans-serif;
+    font-size: 15px;
+    color: #7a5a40;
+    font-weight: 300;
+}
+.cart__summary-value{
+    font-family: 'Jost', sans-serif;
+    font-size: 15px;
+    color: #a08060;
+}
+.cart__divider{
+    height: 1px;
+    background: #2e2010;
+    margin: 20px 0;
+}
+.cart__total-row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+}
+.cart__total-label{
+    font-family: 'Cormorant Garant', serif;
+    font-size: 20px;
+    color: #f5ede0;
+    font-weight: 700;
+}
+.cart__free-shipping{
+    font-family: 'Jost', sans-serif;
+    font-size: 11px;
+    color: #c9813a;
+    letter-spacing: 0.5px;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+.cart__checkout-btn{
+    width: 100%;
+    background: #c9813a;
+    border: none;
+    color: #1a1208;
+    padding: 16px;
+    border-radius: 2px;
+    font-family: 'Jost', sans-serif;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 12px;
+    transition: background 0.2s;
+}
+.cart__checkout-btn:hover{
+    background: #dbbf84;
+}
+
+.CART__CONTINUE-SHOPPING-BTN{
+    background: none;
+    width:100%;
+    background: none;
+    border: none;
+    border-radius: 2px;
+    color: #7a5a40;
+    font-family: 'Jost', sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+    letter-spacing: 1px;
+}
+
+
+.cart_success-icon{
+    font-size: 60px;
+    margin: 30px;
+}
+
+.cart_success-title{
+    margin-bottom: 10px;
+}
+
+.cart_success-text{
+    margin-bottom: 10px;
+}
+
+.cart__success-btn{
+    
+}

@@ -5,9 +5,11 @@ import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Productlist from "./pages/Productlist";
 import { CartProvider } from "./context/Cartcontext";
-import Cart from './pages/Cart'
+import Cart from './pages/Cart';
+import Login from "./Register/Login";
+// import { Color } from "../Color";
 
-const AboutPage = () => (
+const  AboutPage = () => (
   <main className="about-page">
     <div className="about-container">
       <p className="about-eyebrow">Our Story</p>
@@ -24,6 +26,8 @@ const AboutPage = () => (
 
 const renderPage = (page, setPage) => {
   switch (page) {
+    case "login":
+      return <Login setPage={setPage}/>
     case "home":
       return (
         <>
@@ -48,14 +52,19 @@ const renderPage = (page, setPage) => {
 };
 
 const App = () => {
-  const [page, setPage] = useState("home");
+  const [page, setPage] = useState("login");
 
   return (
     <CartProvider>
       <div>
-        <Navbar page={page} setPage={setPage} />
+        {page === "login" ? <Login setPage={setPage}/> :
+        <div>
+          <Navbar page={page} setPage={setPage} />
         <div className="content">{renderPage(page, setPage)}</div>
         <Footer setPage={setPage} />
+         {/* <Color/> */}
+        </div>
+        }
       </div>
     </CartProvider>
   );

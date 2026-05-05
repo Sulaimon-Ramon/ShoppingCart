@@ -9,6 +9,7 @@ import './Productlist.css'
 const Productlist = () => {
   const [activeCategory, setActiveCategory] = useState("All");
   const [search, setSearch] = useState("");
+  const [sort, setSort] = useState("default")
 
   const CATEGORIES = [
     "All",
@@ -29,7 +30,10 @@ const Productlist = () => {
       (products) =>
         products.name.toLowerCase().includes(search.toLowerCase()) ||
         products.description.toLowerCase().includes(search.toLowerCase()),
-    );
+    ).sort((a,b) => {
+      if(sort === "price-asc") return a.price - b.price;
+      if(sort === "price-desc") return b.price - a.price;
+    });
 
   return (
     <main className="product-list">
@@ -42,7 +46,9 @@ const Productlist = () => {
           <input
             type="text"
             className="Product-list__search"
-            placeholder="Search Products"
+            placeholder="Search Products..."
+            value={search}
+            onChange={(e)=> setSearch(e.target.value)}
           />
           <div className="product-list__categories">
             {CATEGORIES.map((category) => (
@@ -55,10 +61,13 @@ const Productlist = () => {
               </button>
             ))}
           </div>
-          <select className="product-list__sort">
+          <select className="product-list__sort"
+          value={sort}
+          onChange={(e)=> setSort(e.target.value)}
+          >
             <option value="default">Sort: Default</option>
             <option value="price-asc">Price: Low to High</option>
-            <option value="price-des">Price: High to Low</option>
+            <option value="price-desc">Price: High to Low</option>
             <option value="rating">Top Rated</option>
           </select>
         </div>

@@ -15,7 +15,8 @@ const products =[
     +"design, perfect for any living space. Made from "
     +"sustainable materials and designed for comfort and "
      +"style.",
-     badge: "Bestseller"
+     badge: "Bestseller",
+     stock: 10
 },
 {
     id: 2,
@@ -26,6 +27,7 @@ const products =[
     reviews: 89,
     emoji: '\u{1F373}',
     badge: "Highfashion",
+    stock: 10,
     description: "Complete 5-piece non-stick cookware set including frying pan, saucepan, and stockpot. Features heat-resistant handles and dishwasher-safe design for easy cleanup."
 },
 {
@@ -33,9 +35,10 @@ const products =[
     name: "Cozy Blanket",
     price: 29.999999,
     rating: 4,
-    category: "Home",
+    category: "Clothing",
     reviews: 200,
     emoji: '\u{1F9E6}',
+    stock: 10,
     badge: "Royal",
     description: "Snuggle up with this cozy blanket, made from soft and warm materials. Ideal for chilly evenings or adding a touch of comfort to your living space."
 },
@@ -47,6 +50,7 @@ const products =[
     category: "Garden",
     reviews: 78,
     emoji: '\u{1F331}',
+    stock: 10,
     badge: "Unique",
     description: "Durable stainless steel trowel set for all your gardening needs. Includes 3 sizes, ergonomic handles, and rust-resistant coating for long-lasting use."
 },
@@ -57,6 +61,7 @@ const products =[
     rating: 4,
     category: "Garden",
     reviews: 45,
+    stock: 10,
     emoji: '\u{1FAB4}',
     description: "Spacious raised garden bed made from weather-resistant cedar wood. Easy to assemble and perfect for growing vegetables, herbs, or flowers.",
     badge: "New"
@@ -70,6 +75,7 @@ const products =[
     reviews: 312,
     emoji: '\u{1F58A}',
     badge: "Unique",
+    stock: 10,
     description: "Smooth-writing ballpoint pens in assorted colors. Pack of 12, ideal for everyday writing, note-taking, and creative projects."
 },
 {
@@ -79,6 +85,7 @@ const products =[
     rating: 4.7,
     category: "Clothing",
     reviews: 156,
+    stock: 10,
     emoji: '\u{1F9E5}',
     description: "Timeless denim jacket with a relaxed fit and button-front closure. Versatile enough for casual outings or layering in cooler weather.",
     badge: "Bestseller"
@@ -88,11 +95,300 @@ const products =[
     name: "Floral Summer Dress",
     price: 44.99,
     rating: 4.3,
-    category: "Apparel",
+    category: "Clothing",
     reviews: 203,
     emoji: '\u{1F457}',
     badge: "Royal",
+    stock: 10,
     description: "Light and breezy floral dress perfect for warm days. Features a flattering A-line silhouette, adjustable straps, and a vibrant print."
+},
+{
+    id: 9,
+    name: "Wireless Earbuds",
+    price: 59.99,
+    rating: 4.6,
+    category: "Home",
+    reviews: 320,
+    emoji: '\u{1F3A7}',
+    badge: "Bestseller",
+    stock: 10,
+    description: "Compact Bluetooth earbuds with noise cancellation and 24h battery life. Includes charging case and multiple ear tip sizes."
+},
+{
+    id: 10,
+    name: "Smart Water Bottle",
+    price: 34.99,
+    rating: 4.4,
+    category: "Apparel",
+    reviews: 98,
+    emoji: '\u{1F9EA}',
+    stock: 10,
+    badge: "New",
+    description: "Hydration reminder bottle with temperature display and 16oz capacity. Leakproof design and durable build for active lifestyles."
+},
+{
+    id: 11,
+    name: "Yoga Mat",
+    price: 22.99,
+    rating: 4.8,
+    category: "Apparel",
+    reviews: 274,
+    emoji: '\u{1F9D8}',
+    stock: 10,
+    badge: "Highfashion",
+    description: "Eco-friendly non-slip yoga mat with extra cushioning. Ideal for home workouts, Pilates, and stretching routines."
+},
+{
+    id: 12,
+    name: "Laptop Sleeve",
+    price: 18.5,
+    rating: 4.2,
+    category: "Home",
+    reviews: 140,
+    emoji: '\u{1F4BB}',
+    badge: "Unique",
+    stock: 10,
+    description: "Protective 13-inch laptop sleeve with soft interior and water-resistant exterior. Fits most ultrabooks and MacBooks."
+},
+{
+    id: 13,
+    name: "Bluetooth Speaker",
+    price: 45.99,
+    rating: 4.5,
+    category: "Apparel",
+    reviews: 208,
+    emoji: '\u{1F3B7}',
+    stock: 10,
+    badge: "Bestseller",
+    description: "Portable speaker with rich bass, 12h playback, and built-in microphone. IPX5 water-resistant for outdoor use."
+},
+{
+    id: 14,
+    name: "Desk Organizer",
+    price: 14.99,
+    rating: 4.1,
+    category: "Home",
+    reviews: 89,
+    emoji: '\u{1F4C1}',
+    badge: "New",
+    stock: 10,
+    description: "Multi-compartment desk organizer for stationery and gadgets. Includes pen holders, tray, and smartphone slot."
+},
+{
+    id: 15,
+    name: "Ceramic Mug Set",
+    price: 26.99,
+    rating: 4.3,
+    stock: 10,
+    category: "Kitchen",
+    reviews: 160,
+    emoji: '\u{1F375}',
+    badge: "Royal",
+    description: "Set of 4 modern ceramic mugs with stylish color accents. Microwave and dishwasher safe."
+},
+{
+    id: 16,
+    name: "Noise-Reducing Headphones",
+    price: 99.99,
+    rating: 4.6,
+    category: "Apparel",
+    reviews: 430,
+    emoji: '\u{1F3A7}',
+    stock: 10,
+    badge: "Bestseller",
+    description: "Over-ear headphones with active noise cancellation and hi-fi sound. Comfortable earpads for extended listening."
+},
+{
+    id: 17,
+    name: "Organic Olive Oil",
+    price: 15.75,
+    rating: 4.7,
+    category: "Kitchen",
+    reviews: 112,
+    emoji: '\u{1F33D}',
+    badge: "Unique",
+    stock: 10,
+    description: "Cold-pressed organic extra virgin olive oil in 500ml bottle. Perfect for cooking and dressings."
+},
+{
+    id: 18,
+    name: "LED Desk Lamp",
+    price: 39.99,
+    rating: 4.4,
+    category: "Home",
+    reviews: 143,
+    emoji: '\u{1F4A1}',
+    stock: 10,
+    badge: "Highfashion",
+    description: "Adjustable LED desk lamp with touch controls and brightness modes. Ideal for reading and workspace lighting."
+},
+{
+    id: 19,
+    name: "Travel Backpack",
+    price: 64.99,
+    rating: 4.8,
+    category: "Apparel",
+    reviews: 220,
+    emoji: '\u{1F392}',
+    badge: "Bestseller",
+    stock: 10,
+    description: "Durable travel backpack with 30L capacity, padded laptop compartment, and RFID pocket. Comfortable straps and water-resistant fabric."
+},
+{
+    id: 20,
+    name: "Gourmet Chocolate Box",
+    price: 27.99,
+    rating: 4.9,
+    category: "Kitchen",
+    stock: 10,
+    reviews: 340,
+    emoji: '\u{1F36B}',
+    badge: "Royal",
+    description: "Assorted gourmet chocolates with premium fillings. Elegant gift box for special occasions."
+},
+{
+    id: 21,
+    name: "Stainless Steel Water Bottle",
+    price: 19.99,
+    rating: 4.5,
+    category: "Kitchen",
+    reviews: 185,
+    emoji: '\u{1F6B0}',
+    stock: 10,
+    badge: "New",
+    description: "Insulated 24oz water bottle keeps drinks cold for 24h and hot for 12h. Leak-proof lid and sweat-free exterior."
+},
+{
+    id: 22,
+    name: "Photo Frame Set",
+    price: 20.99,
+    rating: 4.2,
+    category: "Home",
+    reviews: 65,
+    emoji: '\u{1F5BC}',
+    badge: "Unique",
+    stock: 10,
+    description: "Set of 3 picture frames in assorted sizes with contemporary finishes. Includes wall-hanging and tabletop options."
+},
+{
+    id: 23,
+    name: "Fitness Tracker",
+    price: 49.99,
+    rating: 4.3,
+    category: "Home",
+    reviews: 275,
+    emoji: '\u{1F4AA}',
+    badge: "Highfashion",
+    stock: 10,
+    description: "Slim fitness tracker with heart-rate monitoring, sleep tracking, and step counting. Bluetooth sync to mobile app."
+},
+{
+    id: 24,
+    name: "Portable Charger",
+    price: 34.99,
+    rating: 4.6,
+    category: "Home",
+    reviews: 290,
+    emoji: '\u{1F50B}',
+    badge: "Bestseller",
+    stock: 10,
+    description: "10,000mAh power bank with fast charging and dual USB ports. Compact and lightweight for travel."
+},
+{
+    id: 25,
+    name: "Aroma Diffuser",
+    price: 22.99,
+    rating: 4.8,
+    category: "Home",
+    reviews: 146,
+    emoji: '\u{1F9C3}',
+    badge: "Royal",
+    stock: 10,
+    description: "Ultrasonic essential oil diffuser with 7 LED colors and timer settings. Creates a calming environment."
+},
+{
+    id: 26,
+    name: "Garden Knee Pad",
+    price: 14.5,
+    rating: 4.1,
+    category: "Garden",
+    reviews: 88,
+    stock: 10,
+    emoji: '\u{1F4AA}',
+    badge: "New",
+    description: "Comfortable garden knee pad with thick foam cushioning and durable exterior. Protects knees during planting and weeding."
+},
+{
+    id: 27,
+    name: "Wireless Mouse",
+    price: 16.99,
+    rating: 4.3,
+    stock: 10,
+    category: "Apparel",
+    reviews: 176,
+    emoji: '\u{1F5B1}',
+    badge: "Highfashion",
+    description: "Ergonomic wireless mouse with adjustable DPI and quiet click. Easy setup with USB receiver."
+},
+{
+    id: 28,
+    name: "Scented Candle Trio",
+    price: 19.99,
+    rating: 4.6,
+    category: "Home",
+    reviews: 214,
+    stock: 10,
+    emoji: '\u{1F56F}',
+    badge: "Bestseller",
+    description: "Set of three scented candles (lavender, vanilla, eucalyptus) with long-lasting burn time. Perfect for relaxation and gifting."
+},
+{
+    id: 29,
+    name: "Children's Puzzle",
+    price: 12.99,
+    rating: 4.7,
+    category: "Stationery",
+    reviews: 134,
+    emoji: '\u{1F9E9}',
+    badge: "Unique",
+    stock: 10,
+    description: "Colorful 500-piece puzzle for kids with educational theme and sturdy pieces. Encourages problem-solving and fine motor skills."
+},
+{
+    id: 30,
+    name: "Kitchen Knife Set",
+    price: 69.99,
+    rating: 4.5,
+    category: "Kitchen",
+    reviews: 150,
+    emoji: '\u{1F52A}',
+    badge: "Royal",
+    stock: 10,
+    description: "8-piece stainless steel knife set with ergonomic handles and wooden block. Includes chef's knife, paring knife, and more."
+},
+{
+    id: 31,
+    name: "Smart Plant Sensor",
+    price: 32.99,
+    rating: 4.7,
+    category: "Garden",
+    reviews: 118,
+    emoji: '\u{1F33F}',
+    stock: 10,
+    badge: "New",
+    description: "Wireless soil sensor that monitors moisture, light, and temperature. Syncs with smartphone app to keep plants healthy."
+},
+{
+    id: 32,
+    name: "Travel Packing Cubes",
+    price: 28.5,
+    rating: 4.5,
+    category: "Stationery",
+    reviews: 212,
+    stock: 10,
+    emoji: '\u{1F4BC}',
+    badge: "Highfashion",
+    description: "Set of 6 lightweight packing cubes to organize luggage. Includes breathable mesh tops and durable zippers."
 }
 ]
 

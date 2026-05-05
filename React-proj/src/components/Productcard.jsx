@@ -6,7 +6,7 @@ export const Productcard = ({ products }) => {
     const [added, setAdded] = useState(false);
     const {dispatch, cart} = useCart()
     const exists = cart.find(i => i.id === products.id);
-    const check = ""
+    const check = "\u2713"
 
 
     const handleAdd = () => {

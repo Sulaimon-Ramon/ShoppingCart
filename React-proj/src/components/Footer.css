@@ -52,7 +52,7 @@
 }
 
 .footer__col-heading {
-  font-size: 11px;
+  font-size: 14px;
   color: #c98130;
   text-transform: uppercase;
   letter-spacing: 3px;
@@ -66,8 +66,9 @@
   font-family: "jost", sans-serif;
   border: none;
   padding: 0;
-  text-align: left;
-  font-weight: 300;
+  text-align: center;
+  font-size: medium;
+  font-weight: 200;
   color: #6b5040;
   transition: color 0.2s;
 }

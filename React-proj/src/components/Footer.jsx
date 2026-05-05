@@ -37,11 +37,11 @@ const Footer = ({setPage}) => {
             <div key={col.heading} className="footer__col">
               <p className="footer__col-heading">{col.heading}</p>
               {col.links.map((link) =>(
-                 <button key={link}
+                 <p key={link}
                 className="footer__link"
                 onClick={() => setPage("shop")}>
                 {link}
-              </button>
+              </p>
               ))}
             </div>
           ))}

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Invoice Email</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #f4f4f4;
+            font-family: Arial, sans-serif;
+        }
+
+        .email-container {
+            max-width: 600px;
+            margin: 30px auto;
+            background: #ffffff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        .header {
+            background: #c9813a;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        .content {
+            padding: 30px 25px;
+            color: #333;
+        }
+
+        .content h2 {
+            margin-top: 0;
+            font-size: 22px;
+        }
+
+        .invoice-details {
+            margin: 20px 0;
+            line-height: 1.8;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table th {
+            background: #f0f0f0;
+            padding: 12px;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        table td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+            font-size: 14px;
+        }
+
+        .total {
+            text-align: right;
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .button {
+            display: inline-block;
+            margin-top: 25px;
+            padding: 12px 24px;
+            background: #c9813a;
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: bold;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 13px;
+            color: #777;
+            background: #fafafa;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="email-container">
+
+        <div class="header">
+            <h1>ShoppingCart</h1>
+            <p>Thank you for your purchase!</p>
+        </div>
+
+        <div class="content">
+            <h2>Invoice #INV-2026-001</h2>
+
+            <p>Hello Success,</p>
+            <p>We appreciate your order. Below is your purchase summary:</p>
+
+            <div class="invoice-details">
+                <strong>Order Date:</strong> April 28, 2026<br>
+                <strong>Payment Method:</strong> Debit Card<br>
+                <strong>Delivery Address:</strong> Lagos, Nigeria
+            </div>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Qty</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Wireless Headphones</td>
+                        <td>1</td>
+                        <td>$80</td>
+                    </tr>
+                    <tr>
+                        <td>Phone Charger</td>
+                        <td>2</td>
+                        <td>$20</td>
+                    </tr>
+                    <tr>
+                        <td>Shipping Fee</td>
+                        <td>-</td>
+                        <td>$10</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="total">
+                Total: $110
+            </div>
+
+            <a href="#" class="button">Track Your Order</a>
+        </div>
+
+        <div class="footer">
+            © 2026 Gera Shop. All rights reserved.
+        </div>
+
+    </div>
+
+</body>
+
+</html>
