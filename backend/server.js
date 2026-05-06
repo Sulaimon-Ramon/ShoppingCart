@@ -23,8 +23,8 @@ app.post("/api/send-email", async (req, res) => {
     port: 587,
     secure: false,
     auth: {
-      user: "iheruomemichael@gmail.com",
-      pass: "mjcq rtoa odou sgpm",
+      user: "olajidesulaimon339@gmail.com",
+      pass: "utqd hkoz vlzq qyls",
     },
   });
 
